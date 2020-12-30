@@ -178,6 +178,7 @@ div.noticias div h5{
   text-align: left;
   padding-left: 1rem;
   padding-top: 0.8rem;
+  padding-right: 0.8rem;
   margin: 0;
   text-transform: capitalize;
 }
@@ -189,14 +190,17 @@ div.noticias div h5{
 }
 .lugar{
   color: #5096F2;
-  font-weight: 140;
+  font-weight: 180;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma;
+  padding-right: 0.8rem;
+  
 }
 .dire{
   color: #848B8E;
   font-size: small;
   text-transform: capitalize;
+  padding-right: 1rem;
   
 }
 
