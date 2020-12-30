@@ -247,10 +247,10 @@ div.noticias div h5{
 
 .datosx{
   color: #1a1725;
-  font-size:large;
+  font-size: 120%;
   font-weight: 200;
   text-transform: uppercase;
-  font-family: Georgia, serif;
+  font-family: Helvetica, serif;
   padding-right: 0.8rem;
   
 }
