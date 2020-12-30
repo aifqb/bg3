@@ -190,6 +190,7 @@ div.noticias div h5{
 }
 .lugar{
   color: #5096F2;
+  font-size:large;
   font-weight: 200;
   text-transform: uppercase;
   font-family: Georgia, serif;
@@ -198,7 +199,7 @@ div.noticias div h5{
 }
 .dire{
   color: #848B8E;
-  font-size: small;
+  font-size: medium;
   text-transform: capitalize;
   padding-right: 1rem;
   
@@ -246,9 +247,12 @@ div.noticias div h5{
 
 .datosx{
   color: #1a1725;
-  font-weight: 140;
+  font-size:large;
+  font-weight: 200;
   text-transform: uppercase;
-  font-family: 'Segoe UI', Tahoma;
+  font-family: Georgia, serif;
+  padding-right: 0.8rem;
+  
 }
 /* noticias */
 
