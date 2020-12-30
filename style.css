@@ -250,7 +250,7 @@ div.noticias div h5{
   font-size: 120%;
   font-weight: 200;
   text-transform: uppercase;
-  font-family: Helvetica, serif;
+  font-family: Helvetica, serif, "nunito";
   padding-right: 0.8rem;
   
 }
