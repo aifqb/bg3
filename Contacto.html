@@ -10,6 +10,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" type="image/svg+xml" href="logo bon gusto.svg">
     <title>Bon gusto | Contacto</title>
 </head>
@@ -87,18 +88,15 @@
                         <div class="shadow" style="border-radius: 1rem;">
                             <img src="/apoyo/pexels-sora-shimazaki-5668790.jpg" class="img-fluid h-100  "
                                 style="border-radius: 1rem;" alt="vendedor">
-                            <div
-                                class="card-img-overlay text-white d-flex flex-column justify-content-center  text-center">
-                                <span class="fas fa-phone-alt h5 p-2"></span>
-                                <h2 class="text-uppercase">
-                                    Contacto
-                                </h2>
-                            </div>
+
                         </div>
                     </div>
                     <!-- textos-->
                     <div class="col-12 col-md-8 p-4 text-center">
                         <!-- imagen conversar-->
+                        <h2 class="text-uppercase">
+                            Contacto
+                        </h2>
                         <p class="text-muted">
                             En Bon gusto trabajamos para brindar el mejor servicio posible para la atención a nuestros
                             clientes.
@@ -446,5 +444,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+    <script>
+        window.sr = ScrollReveal();
+    
+        sr.reveal('.punto', {
+            duration: 3000,
+            // delay: 1000,
+            origin: 'left',
+            distance: '100px',
+            viewFactor: 0.2
+        });
+    
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </html>
