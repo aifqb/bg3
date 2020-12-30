@@ -10,6 +10,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" type="image/svg+xml" href="logo bon gusto.svg">
     <title>Bon gusto | Nosotros</title>
 </head>
@@ -115,7 +116,7 @@
                         <img src="/apoyo/bon gusto logo 14 banner.jpg" class="img-fluid w-100" ; alt="vendedor">
                     </div> -->
                     <!-- foto carusel historia -->
-                    <div id="carounos" class=" p-0 col-12 col-md-6 carousel slide carousel-fade" data-ride="carousel">
+                    <div id="carounos" class=" play p-0 col-12 col-md-6 carousel slide carousel-fade" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carounos" data-slide-to="0" class="active"></li>
                             <li data-target="#carounos" data-slide-to="1"></li>
@@ -143,7 +144,7 @@
                         </a>
                     </div>
                     <!-- historia -->
-                    <div class=" p-0 col-12 col-md-6 align-items-center d-flex shadow-sm">
+                    <div class=" play p-0 col-12 col-md-6 align-items-center d-flex shadow-sm">
                         <div class="p-4">
                             <h4 class="fw-bold text-uppercase text-center">
                                 Historia
@@ -345,7 +346,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-
+    <script>
+        window.sr = ScrollReveal();
+    
+        sr.reveal('.play', {
+            duration: 3000,
+            // delay: 1000,
+            origin: 'bottom',
+            distance: '100px',
+            viewFactor: 0.2
+        });
+    
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 <script>
     function openPage(pageName, elmnt, color) {
         var i, tabcontent, tablinks;

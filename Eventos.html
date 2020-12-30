@@ -10,6 +10,8 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="icon" type="image/svg+xml" href="logo bon gusto.svg">
     <title>Bon gusto | Eventos</title>
 </head>
@@ -92,7 +94,7 @@
     <!-- Evento 1 -->
     <div class="container">
         <div class="row noticias">
-            <div class="col-md col-12">
+            <div class="play col-md col-12">
                 <div class=" embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/uYc2hM17tgI" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -108,7 +110,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md col-12">
+            <div class="play col-md col-12">
                 <div class=" embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/TkEyDLsJv08" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -132,7 +134,7 @@
                 </div>
 
             </div>
-            <div class="col-md col-12">
+            <div class="play col-md col-12">
                 <div class=" embed-responsive embed-responsive-16by9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zUNwdF5dEb0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -316,5 +318,26 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-
+    <script>
+        window.sr = ScrollReveal();
+    
+        sr.reveal('.play', {
+            duration: 3000,
+            // delay: 1000,
+            origin: 'bottom',
+            distance: '100px',
+            viewFactor: 0.2
+        });
+    
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </html>
