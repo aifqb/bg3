@@ -283,6 +283,7 @@ div.noticias div p{
 
 .innerz2 {
   overflow: hidden;
+  width: fit-content;
 }
 
 .innerz2 img {
