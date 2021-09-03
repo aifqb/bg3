@@ -197,6 +197,11 @@ div.noticias div h5{
   padding-right: 0.8rem;
   
 }
+
+.lugar:hover{
+  color: #f27650;
+  text-decoration: none;
+}
 .dire{
   color: #848B8E;
   font-size: medium;
